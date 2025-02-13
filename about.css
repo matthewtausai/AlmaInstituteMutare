@@ -1,0 +1,869 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+/*Global tags*/
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35,35,85);
+
+}
+
+span{
+    font-size: .9rem;
+    color:#757373;
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/*navigation */
+
+.navbar{
+   
+    
+    width: 100%;
+    background-color:#fff;
+    
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display:block ;
+    justify-content: space-between;
+    box-shadow: 2PX 2PX 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+
+
+.navbar img{
+    height: 70px;
+    width: 60px;
+}
+
+.navbar .brand{
+    padding-left: 0px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    }
+
+    .navbar ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        line-height: 70px;
+       
+    }
+
+    
+.navbar ul li{
+    float: left;
+
+}
+
+a{
+    display: block ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:grey;
+    width:170px;
+    position: center;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+}
+
+.navbar ul li a:hover{
+    color: gray;
+    font-size: 18px;
+    background: gold;
+
+}
+
+.navbar ul li a::after{
+    content: '';
+    background: #e21010;
+    width: 100%;
+    height: 3px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+}
+.navbar ul li a:hover::after{
+    transform: scaleX(1);
+  }
+
+.nav{
+    display: none;
+}
+
+.social{
+    float: right;
+    margin-right: 20px;
+}
+
+.social a{
+    font-size: 16px;
+    max-width: 50px;
+    height: 70px;
+}
+
+/* Home */
+
+#Home{
+
+    
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+    background-color: rgba(0, 1, 1, 0.4);
+}
+
+.background-clip{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    top: -35px;
+    height: 120vh;
+
+}
+#Home h2:hover{
+    color:gold;
+}
+
+#Home h2{
+
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color:rgba(21, 21, 100);
+    margin-top: 690px;
+    font-weight: 800px;
+    border: 2px solid;
+    width: 35rem;
+    border-radius: 2rem;
+}
+
+#Home h3:hover{
+    color:gold;
+}
+
+#Home h3{
+
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color:rgba(21, 21, 100);
+    margin-top: 40px;
+    border: 2px solid ;
+    border-radius: 2rem;
+    width: 25rem;
+}
+
+#Home p3{
+
+    font-size: 1.9rem;
+    line-height: 25px;
+    color:rgba(21, 21, 100);
+    width: 50%;
+    margin-top: 10px;
+}
+
+#Home p3:hover{
+    color:#fff;
+}
+
+#Home p:hover{
+    color:#fff;
+}
+#Home p{
+    margin-top: 10px;
+    font-size: 1.9rem;
+    line-height: 25px;
+    color:rgba(21, 21, 100);
+    width: 50%;
+}
+
+#Home ul li{
+    color:rgba(21, 21, 100);
+   
+}
+
+
+#Home a{
+text-decoration: none !important;
+font-size: 0.9rem;
+background-color: white;
+font-weight: 600;
+padding: 15px 40px;
+border-radius: 5px;
+
+}
+
+
+
+/*features coding --*/
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    background: rgb(21, 21,100);
+}
+
+#features h1{
+
+color: aliceblue;
+}
+
+#features p{
+
+    color: aliceblue;
+    }
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    height: 100%;
+
+}
+#features .fea-box {
+    text-align: start;
+    background: grey
+}
+
+#features .fea-box img{
+width: 190px;
+font-size: 2.3rem;
+color: rgb(46, 46,59);
+height: 120px;
+
+}
+#features .fea-box h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #F9F9FF;
+    padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FDFF99;
+        
+}
+
+
+
+
+
+
+
+#experts1{
+    margin-top: 14px;
+    text-align: center;
+    padding: 8vw 8vw 8vw 8vw;
+    background-color: grey;
+}
+
+
+
+#experts1 .expert-box1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;  
+}
+
+#experts1 .expert-box1 .profiles1{
+    background: #fafaf1;
+    padding: 30px 10px;
+
+}
+
+.pro-links2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pro-links2 img{
+    margin-top: 90px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 11.2rem;
+    
+}
+
+
+
+
+/*responsive part of the page*/
+@media (max-width: 480px) {
+
+    .pro-links2 img{
+        margin-top: 90px;
+      
+        display: flex;
+        flex-direction: row;
+        margin-left: 3.2rem;
+        
+    }
+
+    .social img{
+        height: 40px;
+        width: 30px;
+        margin-left: 12px;
+    }
+    
+
+    .nav{
+        background: purple;
+        text-align: center;
+        display: block;
+        font-size: 30px;
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .navbar ul li{
+        float: none;
+        width: 100%;
+        display: none;
+        
+    }
+
+    .navbar .brand {
+        display: none;  
+    }
+
+
+.navbar .brand img{
+    display: none;
+
+}
+
+    .navbar ul li a{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+       
+    }
+
+    .social{
+       
+        width: 100%;
+        float: left;
+        text-align: center;
+        border-top: 1px solid gray ;
+    }
+
+
+    .social ul li{
+        float: left;
+        max-width: 60px;
+       
+    }
+
+    .social img{
+        height: 40px;
+        width: 30px;
+    }
+
+    #Home h2{
+        margin-top: 40rem;
+        height: auto;
+        width: auto;
+
+
+    }
+
+    #Home h3{
+        margin-top: 9rem;
+        width: 190px;
+        
+
+    }
+
+    #Home{
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 230vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+
+    #features{
+        padding: 5vw 8vw 0 8vw;
+        text-align: center;
+        background: rgb(21, 21,100);
+        margin-top: 3rem;
+    }
+
+    #registration .form{
+        display:block;
+        margin-left: 3rem;
+        margin-top: 4rem;
+        width: 20rem;
+        
+    
+    
+    }
+
+    #registration{
+        display:block;
+        margin-left: 2rem;
+        margin-top: 4rem;
+        
+    
+    
+    }
+
+    
+    
+    #courses .course-base{
+        
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+        height: 100%;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+        
+    #courses .course-box{
+        text-align: center;
+        position: relative;
+        width: 30%;
+        height: auto;
+    }
+
+    .pro-links{
+        margin-top: 60px;
+        display: flex;
+    }
+
+    .pro-links img{
+        margin-top: 10px;
+        display: flex;
+        margin-left: 3rem;
+    }
+
+    #experts .profiles img{
+        height: 50%;  
+        width: 50%;
+    }
+
+    .pro-links2{
+        margin-left: -70px;;
+    }
+
+    .pro-links2 img{
+        height: 30px;
+    }
+
+
+}
+
+
+   
+@media(min-width: 780px){
+
+    .navbar ul li{
+        display: block;
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .pro-links2 img{
+        margin-top: 90px;
+        
+        display: flex;
+        flex-direction: row;
+        margin-left: 3.2rem;
+        
+    }
+
+    .social img{
+        height: 60px;
+        width: 30px;
+        margin-left: 10px;
+    }
+    
+
+    .nav{
+        background: purple;
+        text-align: center;
+        display: block;
+        font-size: 30px;
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .navbar ul li{
+        float: none;
+        width: 100%;
+        display: none;
+        
+    }
+
+    .navbar .brand {
+        display: none;
+        
+
+        
+    }
+
+
+.navbar .brand img{
+    display: none;
+
+}
+
+    .navbar ul li a{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+       
+    }
+
+    .social{
+       
+        width: 100%;
+        float: left;
+        text-align: center;
+        border-top: 1px solid gray ;
+    }
+
+
+    .social ul li{
+        float: left;
+        max-width: 60px;
+        margin-left: 70px;
+    }
+
+    
+
+    #Home{
+
+        background-color: rgba(0, 0, 0, 0.4);
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 250vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    
+
+    #Home h1{
+        margin-top: 5px;
+
+    }
+
+    #features{
+        padding: 5vw 8vw 0 8vw;
+        text-align: center;
+        background: rgb(21, 21,100);
+        margin-top: 1rem;
+    }
+
+    #registration .form{
+        display:block;
+        margin-left: 3rem;
+        margin-top: 4rem;
+        width: 20rem;
+        
+    
+    
+    }
+
+    #registration{
+        display:block;
+        margin-left: 2rem;
+        margin-top: 4rem;
+        
+    
+    
+    }
+
+    
+    
+    #courses .course-base{
+        
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+        height: 100%;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+        
+    #courses .course-box{
+        text-align: center;
+        position: relative;
+        width: 30%;
+        height: auto;
+    }
+
+    .pro-links{
+        margin-top: 60px;
+        display: flex;
+    }
+
+    .pro-links img{
+        margin-top: 10px;
+        display: flex;
+        margin-left: 3rem;
+    }
+
+    #experts .profiles img{
+        height: 50%;  
+        width: 50%;
+    }
+
+    .pro-links2{
+        margin-left: -70px;;
+    }
+
+    .pro-links2 img{
+        height: 30px;
+    }
+
+
+}
+
+
+@media (max-width: 1280px) {
+
+    .pro-links2 img{
+        margin-top: 90px;
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+    .social img{
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+    }
+    
+
+    .nav{
+        background: purple;
+        text-align: center;
+        display: block;
+        font-size: 30px;
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .navbar ul li{
+        float: none;
+        width: 100%;
+        display: none;
+        
+    }
+
+    .navbar .brand {
+        display: none;
+        
+
+        
+    }
+
+
+.navbar .brand img{
+    display: none;
+
+}
+
+    .navbar ul li a{
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+       
+    }
+
+    .social{
+       
+        width: 100%;
+        float: left;
+        text-align: center;
+        border-top: 1px solid gray ;
+    }
+
+
+    .social ul li{
+        float: left;
+        max-width: 60px;
+        margin-left: 70px;
+    }
+
+    
+
+    #Home{
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 320vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    #Home h2{
+        margin-top: 23rem;
+        height: auto;
+        width: auto;
+
+
+    }
+
+    #Home h3{
+        margin-top: 3rem;
+        width: 190px;
+        
+
+    }
+
+    #features{
+        padding: 5vw 8vw 0 8vw;
+        text-align: center;
+        background: rgb(21, 21,100);
+        margin-top: 1rem;
+    }
+
+    #registration .form{
+        display:block;
+        margin-left: 3rem;
+        margin-top: 4rem;
+        width: 20rem;
+        
+    
+    
+    }
+
+    #registration{
+        display:block;
+        margin-left: 2rem;
+        margin-top: 4rem;
+        
+    
+    
+    }
+
+    
+    
+    #courses .course-base{
+        
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+        height: 100%;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+        
+    #courses .course-box{
+        text-align: center;
+        position: relative;
+        width: 30%;
+        height: auto;
+    }
+
+    .pro-links{
+        margin-top: 60px;
+        display: flex;
+    }
+
+    .pro-links img{
+        margin-top: 10px;
+        display: flex;
+        margin-left: 3rem;
+    }
+
+    #experts .profiles img{
+        height: 50%;  
+        width: 50%;
+    }
+
+    .pro-links2{
+        margin-left: -70px;;
+    }
+
+    .pro-links2 img{
+        height: 30px;
+    }
+
+    .background-clip{
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        top: 45px;
+        height: 90vh;
+        width: 100%;
+    
+    }
+
+
+}
+
+
+    
